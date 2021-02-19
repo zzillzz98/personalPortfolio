@@ -1,7 +1,7 @@
 import React from 'react'
 
 //Material UI Imports
-import { Box, Grid, makeStyles, Typography } from '@material-ui/core'
+import { Box, CardHeader, Grid, makeStyles, Typography } from '@material-ui/core'
 import Paper from '@material-ui/core/Paper';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -14,6 +14,8 @@ import Banner from './../assets/banner.png'
 import ProfilePic from './../assets/profilePic.png'
 import Programmer from './../assets/programmer-amico.svg'
 import Developer from './../assets/developer-amico.svg'
+import FrontEnd from './../assets/front-end.svg'
+import BackEnd from './../assets/back-end.svg'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -55,7 +57,29 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         flexWrap: 'wrap',
     },
-    
+    skillsTitle: {
+        color: "#00887A",
+        fontWeight: "bold",
+        textAlign: 'center',
+        marginTop: theme.spacing(12),
+        marginBottom: theme.spacing(12)
+    },
+    heading: {
+        color: "#00887A",
+        textAlign: "center",
+        fontWeight: "bold"
+    },
+    cardSkills: {
+        width: "300vh"
+    },
+    cardSkillMedia: {
+        height: 200,
+        width:400,
+        textAlign: "center",
+        marginBottom: theme.spacing(4),
+
+    }
+
 }));
 
 //...........Text animation code.................//
@@ -132,16 +156,20 @@ const Home = () => {
                     justify="center"
                     alignItems="center"
                 >
-                    <Grid item>
-                        <Typography variant="h4" className={classes.title}>An Aspiring Front-End Web Developer</Typography>
-                        <Typography className={classes.titleFooter}>I{'  '}
-                            <span
-                                class="txt-rotate"
-                                data-period="1000"
-                                style={{}}
-                                data-rotate='["Design and code beautifully simple things", "Love what I do"]'></span>
-                        </Typography>
-                    </Grid>
+                    <div style={{ height: '30vh', display: 'flex', alignItems: 'center', flexWrap: 'wrap', }}>
+                        <Grid item>
+
+                            <Typography variant="h4" className={classes.title}>An Aspiring Front-End Web Developer</Typography>
+                            <Typography className={classes.titleFooter}>I{'  '}
+                                <span
+                                    class="txt-rotate"
+                                    data-period="1000"
+                                    style={{}}
+                                    data-rotate='["Design and code beautifully simple things", "Love what I do"]'></span>
+                            </Typography>
+
+                        </Grid>
+                    </div>
                 </Grid>
                 <Grid item>
                     <div className={classes.paper}>
@@ -193,6 +221,93 @@ const Home = () => {
                             <div className={classes.text}>
                                 <a href="https://storyset.com/work">Illustration by Freepik Storyset</a>
                             </div>
+                        </Grid>
+
+                        <Grid item xs={12}>
+
+                            <Typography
+                                className={classes.skillsTitle}
+                                variant="h4"
+                            >
+                                Skills
+                            </Typography>
+
+                        </Grid>
+
+                        <Grid item container justify="center" xs={12} sm={4}>
+                            <Card className={classes.cardSkills}>
+                                <CardHeader
+                                    title="Back End Development"
+                                    className={classes.heading}
+                                />
+                                <CardMedia
+                                    title="Back End Illustrator"
+                                    alt="Back End Illustrator"
+                                    image={BackEnd}
+                                    className={classes.cardSkillMedia}
+                                />
+                                <CardContent>
+                                    <Grid item xs={12}>
+                                        <Typography className={classes.text}>item</Typography>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <Typography className={classes.text}>item</Typography>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <Typography className={classes.text}>item</Typography>
+                                    </Grid>
+                                </CardContent>
+                            </Card>
+                        </Grid>
+                        <Grid item container justify="center" xs={12} sm={4}>
+                            <Card className={classes.cardSkills}>
+                                <CardHeader
+                                    title="Front End Development"
+                                    className={classes.heading}
+                                />
+                                <CardMedia
+                                    title="Front End Illustrator"
+                                    alt="Front End Illustrator"
+                                    image={FrontEnd}
+                                    className={classes.cardSkillMedia}
+                                />
+                                <CardContent>
+                                    <Grid item xs={12}>
+                                        <Typography className={classes.text}>item</Typography>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <Typography className={classes.text}>item</Typography>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <Typography className={classes.text}>item</Typography>
+                                    </Grid>
+                                </CardContent>
+                            </Card>
+                        </Grid>
+                        <Grid item container justify="center" xs={12} sm={4}>
+                            <Card className={classes.cardSkills}>
+                                <CardHeader
+                                    title="Other Skills"
+                                    className={classes.heading}
+                                />
+                                <CardMedia
+                                    title="Other Skills"
+                                    alt="Other Skills"
+                                    image={FrontEnd}
+                                    className={classes.cardSkillMedia}
+                                />
+                                <CardContent>
+                                    <Grid item xs={12}>
+                                        <Typography className={classes.text}>item</Typography>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <Typography className={classes.text}>item</Typography>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <Typography className={classes.text}>item</Typography>
+                                    </Grid>
+                                </CardContent>
+                            </Card>
                         </Grid>
 
 
