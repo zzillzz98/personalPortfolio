@@ -1,7 +1,7 @@
 import React from 'react'
 
 //Material UI Imports
-import { Box, CardHeader, Grid, makeStyles, Typography } from '@material-ui/core'
+import { Box, Button, CardHeader, Grid, makeStyles, Typography } from '@material-ui/core'
 import Paper from '@material-ui/core/Paper';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -16,6 +16,7 @@ import Programmer from './../assets/programmer-amico.svg'
 import Developer from './../assets/developer-amico.svg'
 import FrontEnd from './../assets/front-end.svg'
 import BackEnd from './../assets/back-end.svg'
+import OtherSkill from './../assets/other-skills.svg'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -73,10 +74,28 @@ const useStyles = makeStyles((theme) => ({
         width: "300vh"
     },
     cardSkillMedia: {
-        height: 200,
-        width:400,
+        height: 250,
+        //width:300,
         textAlign: "center",
         marginBottom: theme.spacing(4),
+        backgroundSize: "contain"
+
+    },
+    button: {
+        textTransform: 'none',
+        backgroundColor: "#00887A",
+        fontSize: '20px',
+        textAlign: 'center',
+        color: "white",
+        "&:hover" : {
+            backgroundColor: "#FFCCBC",
+            color: "white",
+        }
+    },
+    buttonGrid: {
+        marginTop: theme.spacing(5),
+        textAlign: "center",
+        marginBottom: theme.spacing(2),
 
     }
 
@@ -142,6 +161,10 @@ const Home = () => {
 
     const demoText = {
         text: "Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed doeiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim adminim veniam, quis nostrudexercitation ullamco laboris nisi utaliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderitin voluptate velit esse cillum doloreeu fugiat nulla pariatur. Excepteursint occaecat cupidatat non proident"
+    }
+
+    const scrollTop = () => {
+        window.scrollTo({top:0, behavior: 'smooth'});
     }
 
     return (
@@ -293,7 +316,7 @@ const Home = () => {
                                 <CardMedia
                                     title="Other Skills"
                                     alt="Other Skills"
-                                    image={FrontEnd}
+                                    image={OtherSkill}
                                     className={classes.cardSkillMedia}
                                 />
                                 <CardContent>
@@ -308,6 +331,15 @@ const Home = () => {
                                     </Grid>
                                 </CardContent>
                             </Card>
+                        </Grid>
+                        <Grid item xs={12} className={classes.buttonGrid}>
+                            <Button 
+                                className={classes.button}
+                                onClick={scrollTop}
+                                variant="contained"
+                            >
+                                Scroll Up
+                            </Button>
                         </Grid>
 
 

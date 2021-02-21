@@ -31,7 +31,10 @@ const useStyles = makeStyles((theme) => ({
     button: {
         textTransform: 'none',
         color: "#00887A",
-        fontSize: '20px'
+        fontSize: '20px',
+        "&:hover" : {
+            color: "#FFCCBC",
+        }
     }
 }));
 

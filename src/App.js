@@ -15,6 +15,7 @@ import Contact from './pages/Contact'
 
 //Components
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 
 
 const font =  "'Montserrat', sans-serif";
@@ -40,6 +41,7 @@ function App() {
           <Route exact path='/Socials' component={Socials} />
           <Route exact path='/Contact' component={Contact} />
         </Switch>
+        <Footer />
       </Router>  
       </MuiThemeProvider>
     </div>
