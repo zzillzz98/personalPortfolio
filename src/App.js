@@ -4,6 +4,8 @@ import './font.css'
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
 import { Router, Switch, Route } from 'react-router-dom';
 import history from './history';
+import { makeStyles } from '@material-ui/core/styles'
+
 
 //Pages
 import TempHome from './pages/tempHome'
@@ -28,9 +30,18 @@ const theme = createMuiTheme({
   }
 });
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    //display: 'flex',
+    //flexDirection: 'column',
+    //minHeight: '100vh',
+  },
+}));
+
 function App() {
+  const classes = useStyles();
   return (
-    <div>
+    <div className={classes.root}>
       <MuiThemeProvider theme={theme}>
       <Router history={history}>
         <NavBar />

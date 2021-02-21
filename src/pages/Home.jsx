@@ -95,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
     buttonGrid: {
         marginTop: theme.spacing(5),
         textAlign: "center",
-        marginBottom: theme.spacing(2),
+        marginBottom: theme.spacing(4),
 
     }
 
@@ -179,10 +179,10 @@ const Home = () => {
                     justify="center"
                     alignItems="center"
                 >
-                    <div style={{ height: '30vh', display: 'flex', alignItems: 'center', flexWrap: 'wrap', }}>
+                    <div style={{ height: '41vh', display: 'flex', alignItems: 'center', flexWrap: 'wrap', }}>
                         <Grid item>
 
-                            <Typography variant="h4" className={classes.title}>An Aspiring Front-End Web Developer</Typography>
+                            <Typography variant="h3" className={classes.title}>An Aspiring Front-End Web Developer</Typography>
                             <Typography className={classes.titleFooter}>I{'  '}
                                 <span
                                     class="txt-rotate"
