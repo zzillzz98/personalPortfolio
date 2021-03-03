@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 //Material UI Imports
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Typography } from '@material-ui/core';
+
+//Other imports
+import ProjectsInfo from './../API/ProjectsInfo.jsx';
 
 const useStyles = makeStyles((theme) => ({
     title: {

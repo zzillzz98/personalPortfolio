@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import './font.css'
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
@@ -8,7 +7,6 @@ import { makeStyles } from '@material-ui/core/styles'
 
 
 //Pages
-import TempHome from './pages/tempHome'
 import Home from './pages/Home'
 import Timeline from './pages/Timeline'
 import Projects from './pages/Projects'
