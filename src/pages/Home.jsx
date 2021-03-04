@@ -236,9 +236,7 @@ const Home = () => {
                             <div className={classes.illustration1}>
                                 <img src={Programmer} className={classes.illustration1} alt="programmer pic" />
                             </div>
-                            <div className={classes.text}>
-                                <a href="https://storyset.com/technology">Illustration by Freepik Storyset</a>
-                            </div>
+                            
                         </Grid>
                         <Grid item xs={12} sm={6} className={classes.description1} >
                             <Typography align="center" className={classes.text}>{homeText.text1}</Typography>
@@ -251,9 +249,7 @@ const Home = () => {
                             <div className={classes.illustration1}>
                                 <img src={Developer} className={classes.illustration1} alt="programmer pic" />
                             </div>
-                            <div className={classes.text}>
-                                <a href="https://storyset.com/work">Illustration by Freepik Storyset</a>
-                            </div>
+                            
                         </Grid>
 
                         <Grid item xs={12}>
