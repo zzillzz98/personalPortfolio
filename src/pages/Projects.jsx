@@ -6,6 +6,7 @@ import { Grid, Typography } from '@material-ui/core';
 
 //Other imports
 import ProjectsInfo from './../API/ProjectsInfo.jsx';
+import ProjectTitle from './../components/Project.jsx';
 
 const useStyles = makeStyles((theme) => ({
     title: {
@@ -18,6 +19,10 @@ const useStyles = makeStyles((theme) => ({
 
 const Projects = () => {
     const classes = useStyles();
+    
+    const projectsInfo = () => Object.keys(ProjectsInfo).map(key => 
+            <ProjectTitle projectId={ProjectsInfo[key].projectId} Title={ProjectsInfo[key].Title} Summary={ProjectsInfo[key].Summary}  Illustration={ProjectsInfo[key].Illustration}/>
+        )
 
     return (
         <div>
@@ -40,22 +45,12 @@ const Projects = () => {
                     container
                 >
                     <Grid item xs={1} />
-                    <Grid
-                        item xs={10}
-                        container
-                        alignItems="center"
-                    >
-                        <Grid item xs={12} sm={6}>
-                            <Typography>
-                                Test
-                            </Typography>
+                    <Grid item xs={10}>
+                        {
+                            projectsInfo()
+                        }
+                        
                         </Grid>
-                        <Grid item xs={12} sm={6}>
-                            <Typography>
-                                Test
-                            </Typography>
-                        </Grid>
-                    </Grid>
                     <Grid item xs={1} />
                 </Grid>
 

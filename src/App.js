@@ -12,6 +12,7 @@ import Timeline from './pages/Timeline'
 import Projects from './pages/Projects'
 import Socials from './pages/Socials'
 import Contact from './pages/Contact'
+import ProjectPage from './pages/ProjectPage'
 
 //Components
 import NavBar from './components/NavBar'
@@ -30,9 +31,9 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    //display: 'flex',
-    //flexDirection: 'column',
-    //minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh',
   },
 }));
 
@@ -49,6 +50,7 @@ function App() {
           <Route exact path='/Projects' component={Projects} />
           <Route exact path='/Socials' component={Socials} />
           <Route exact path='/Contact' component={Contact} />
+          <Route exact path='/:id' component={ProjectPage} />
         </Switch>
         <Footer />
       </Router>  
