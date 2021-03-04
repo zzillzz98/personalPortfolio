@@ -1,4 +1,6 @@
 import React from 'react';
+import MetaTags from 'react-meta-tags';
+
 
 //Material UI Imports
 import { makeStyles } from '@material-ui/core/styles';
@@ -26,6 +28,10 @@ const Projects = () => {
 
     return (
         <div>
+            <MetaTags>
+                <title>Zill-e-Rahim Projects | Skills | Experience</title>
+                <meta name="description" content="Essential skills that Zill-e has aquired over the years and the projects that show these skills" />
+            </MetaTags>
             <Grid
                 container
                 direction="column"

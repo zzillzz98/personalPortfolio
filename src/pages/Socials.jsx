@@ -1,4 +1,5 @@
 import React from 'react'
+import MetaTags from 'react-meta-tags';
 
 //Materia UI Imports
 import { Grid, Typography } from '@material-ui/core'
@@ -35,6 +36,10 @@ const Socials = () => {
     const classes = useStyles();
     return (
         <div>
+            <MetaTags>
+                <title>Zill-e-Rahim | Connect | Follow | Socials | GitHub | LinkedIn</title>
+                <meta name="description" content="Connect with Zill-e-Rahim on LinkedIn and follow his GitHub page" />
+            </MetaTags>
             <Grid
                 container
                 direction="column"
@@ -65,7 +70,7 @@ const Socials = () => {
                         <Grid item xs={12} sm={6} container direction="column" justify="center" alignItems="center">
                             <Grid item>
                                 <Typography variant="h4" className={classes.socialHeading}>
-                                    <a style={{textDecoration: "none"}} href="https://www.linkedin.com/in/zillerahim/" className={classes.socialHeading}>LinkedIn</a>
+                                    <a style={{textDecoration: "none"}} href="https://www.linkedin.com/in/zillerahim/" className={classes.socialHeading}>Lets Connect on LinkedIn!!</a>
                                 </Typography>
 
                             </Grid>
@@ -76,7 +81,7 @@ const Socials = () => {
                         <Grid item xs={12} sm={6} container direction="column" justify="center" alignItems="center">
                             <Grid item>
                                 <Typography variant="h4" className={classes.socialHeading}>
-                                <a style={{textDecoration: "none"}} href="https://github.com/rahimz98" className={classes.socialHeading}>GitHub</a>
+                                <a style={{textDecoration: "none"}} href="https://github.com/rahimz98" className={classes.socialHeading}>Follow my GitHub!!</a>
                                 </Typography>
                             </Grid>
                             <Grid item>

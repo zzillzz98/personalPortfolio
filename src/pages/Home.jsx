@@ -1,4 +1,5 @@
 import React from 'react'
+import MetaTags from 'react-meta-tags'
 
 //Material UI Imports
 import { Box, Button, CardHeader, Grid, makeStyles, Typography } from '@material-ui/core'
@@ -163,12 +164,21 @@ const Home = () => {
         text: "Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed doeiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim adminim veniam, quis nostrudexercitation ullamco laboris nisi utaliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderitin voluptate velit esse cillum doloreeu fugiat nulla pariatur. Excepteursint occaecat cupidatat non proident"
     }
 
+    const homeText = {
+        text1: "I'm an aspiring Web developer born in Pakistan and studying Computer Science at the University of Melbourne. Ever since attempting my first web project, I fell in love with React and have ever since been trying to grow my skill with the framework. My goal is become a full stack web developer and get an opportunity to gain professional experience.",
+        text2: "Currently I am in my final year in the Bachelor of Science at the University of Melbourne and will be looking for graduate or entry level work at web development company, whether it be a start up or a big firm. Everyday I'm doing research into the advancements being made in web development technologies as well as finding inspiration on my next personal project."
+    }
+
     const scrollTop = () => {
         window.scrollTo({top:0, behavior: 'smooth'});
     }
 
     return (
         <div>
+            <MetaTags>
+                <title>Zill-e-Rahim | Web Developer | Front End Developer</title>
+                <meta name="description" content="Welcome to Zill-e-Rahim, an aspiring Web Developer Personal Portfolio" />
+            </MetaTags>
             <Grid
                 container
                 direction="column"
@@ -231,11 +241,11 @@ const Home = () => {
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6} className={classes.description1} >
-                            <Typography align="center" className={classes.text}>{demoText.text}</Typography>
+                            <Typography align="center" className={classes.text}>{homeText.text1}</Typography>
                         </Grid>
 
                         <Grid item xs={12} sm={6} className={classes.description1} >
-                            <Typography align="center" className={classes.text}>{demoText.text}</Typography>
+                            <Typography align="center" className={classes.text}>{homeText.text2}</Typography>
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <div className={classes.illustration1}>
@@ -271,13 +281,16 @@ const Home = () => {
                                 />
                                 <CardContent>
                                     <Grid item xs={12}>
-                                        <Typography className={classes.text}>item</Typography>
+                                        <Typography className={classes.text}>NodeJS</Typography>
                                     </Grid>
                                     <Grid item xs={12}>
-                                        <Typography className={classes.text}>item</Typography>
+                                        <Typography className={classes.text}>Express</Typography>
                                     </Grid>
                                     <Grid item xs={12}>
-                                        <Typography className={classes.text}>item</Typography>
+                                        <Typography className={classes.text}>MangoDB</Typography>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <Typography className={classes.text}>Firebase</Typography>
                                     </Grid>
                                 </CardContent>
                             </Card>
@@ -296,13 +309,16 @@ const Home = () => {
                                 />
                                 <CardContent>
                                     <Grid item xs={12}>
-                                        <Typography className={classes.text}>item</Typography>
+                                        <Typography className={classes.text}>ReactJS</Typography>
                                     </Grid>
                                     <Grid item xs={12}>
-                                        <Typography className={classes.text}>item</Typography>
+                                        <Typography className={classes.text}>Material UI</Typography>
                                     </Grid>
                                     <Grid item xs={12}>
-                                        <Typography className={classes.text}>item</Typography>
+                                        <Typography className={classes.text}>HTML/CSS</Typography>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <Typography className={classes.text}>SCSS</Typography>
                                     </Grid>
                                 </CardContent>
                             </Card>
@@ -321,13 +337,16 @@ const Home = () => {
                                 />
                                 <CardContent>
                                     <Grid item xs={12}>
-                                        <Typography className={classes.text}>item</Typography>
+                                        <Typography className={classes.text}>Adobe XD</Typography>
                                     </Grid>
                                     <Grid item xs={12}>
-                                        <Typography className={classes.text}>item</Typography>
+                                        <Typography className={classes.text}>GitHub</Typography>
                                     </Grid>
                                     <Grid item xs={12}>
-                                        <Typography className={classes.text}>item</Typography>
+                                        <Typography className={classes.text}>Git Version Control</Typography>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <Typography className={classes.text}>Invision</Typography>
                                     </Grid>
                                 </CardContent>
                             </Card>

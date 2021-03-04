@@ -1,4 +1,5 @@
 import React from 'react'
+import MetaTags from 'react-meta-tags'
 
 //Material UI imports
 import { makeStyles } from '@material-ui/core/styles';
@@ -82,6 +83,10 @@ const TimelinePage = () => {
 
     return (
         <div className={classes.root}>
+            <MetaTags>
+                <title>Zill-e-Rahim | Experience</title>
+                <meta name="description" content="A overarking timeline of Zill-e's work experience and education" />
+            </MetaTags>
             <Grid
                 container
                 direction="column"

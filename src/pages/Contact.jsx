@@ -1,4 +1,5 @@
 import React from 'react'
+import MetaTags from 'react-meta-tags';
 
 //Material UI Imports
 import { Button, Grid, TextField, Typography } from '@material-ui/core'
@@ -106,6 +107,10 @@ const Contact = () => {
 
     return (
         <div>
+            <MetaTags>
+                <title>Zill-e-Rahim | Contact</title>
+                <meta name="description" content="Contact Zill-e-Rahim for employment or project collaboration" />
+            </MetaTags>
             <Grid
                 container
                 direction="column"

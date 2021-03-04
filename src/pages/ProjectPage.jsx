@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import MetaTags from 'react-meta-tags';
 
 //Material UI imports
 import { makeStyles } from '@material-ui/core/styles';
@@ -48,6 +49,10 @@ const ProjectPage = () => {
 
     return (
         <div>
+            <MetaTags>
+                <title>Zill-e-Rahim | {Project.Title}</title>
+                <meta name="description" content={`${Project.Summary}`} />
+            </MetaTags>
             <Grid container direction="column">
                 <Grid item container justify="center">
                     <div style={{ height: '30vh', display: 'flex', alignItems: 'center', flexWrap: 'wrap', }}>
